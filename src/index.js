@@ -1,3 +1,5 @@
+#!/usr/bin/env babel-node
+
 import { h, Text, render, Component, Color, Bold } from 'ink';
 import BigText from 'ink-big-text';
 import Spinner from 'ink-spinner';

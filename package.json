@@ -29,5 +29,8 @@
     "ink-progress-bar": "^2.1.1",
     "ink-spinner": "^2.0.0",
     "ink-text-animation": "^0.1.0"
+  },
+  "bin": {
+    "happy-new-year-2019": "./src/index.js"
   }
 }
