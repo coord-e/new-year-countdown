@@ -1,4 +1,4 @@
-import { h, Component } from 'ink';
+import { h, Component, Bold } from 'ink';
 import BigText from 'ink-big-text';
 import TextAnimation from 'ink-text-animation';
 
@@ -17,6 +17,7 @@ export class Happy extends Component {
           <BigText text="HAPPY" align="center" font={font} />
           <BigText text="NEW YEAR" align="center" font={font} />
         </TextAnimation>
+        <Bold> 🎉 Have a good holiday! 🎉</Bold>
       </div>
     );
   }
