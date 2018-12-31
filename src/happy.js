@@ -11,7 +11,8 @@ export class Happy extends Component {
     return (
       <div>
         <TextAnimation>
-          <BigText text="HAPPY NEW YEAR" />
+          <BigText text="HAPPY" align="center" />
+          <BigText text="NEW YEAR" align="center" />
         </TextAnimation>
       </div>
     );
