@@ -48,6 +48,7 @@ class Countdown extends Component {
     const is_green = minute != 0 || hour != 0;
 
     if (epoch_diff <= 0) {
+      clearInterval(this.timer);
       return <Happy/>
     }
     return (
@@ -77,7 +78,7 @@ class Countdown extends Component {
       this.setState({
         time: new Date()
       });
-    }, 100);
+    }, 500);
   }
 
   componentWillUnmount() {
