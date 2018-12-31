@@ -7,7 +7,8 @@ import Box from 'ink-box';
 import TextAnimation from 'ink-text-animation';
 
 const NEWYEAR = new Date(2019, 0, 1, 0, 0, 0, 0);
-const LABEL_SEPARATOR = ' '.repeat(5);
+const LABEL_SEPARATOR = ' '.repeat(14);
+const UNTIL_PADDING = ' '.repeat(12);
 const FONTS = ['block', 'simpleBlock', '3d', 'simple3d', 'huge'];
 const font = FONTS[Math.floor(Math.random() * FONTS.length)]
 
@@ -54,15 +55,15 @@ class Countdown extends Component {
         </div>
         <Box>
           <div>
-            <BigText font="chrome" text={`${hour} ${minute} ${second}`}/>
+            <BigText font="block" text={`${hour} ${minute} ${second}`}/>
           </div>
           <div>
-            {' '}HOURS{LABEL_SEPARATOR}MINUTES{LABEL_SEPARATOR}SECONDS
+            {' '.repeat(3)}HOURS{LABEL_SEPARATOR}MINUTES{LABEL_SEPARATOR}SECONDS
           </div>
           <br />
           <br />
           <div>
-            {' '.repeat(2)}<Spinner type="clock" /> Until <Bold>{NEWYEAR.toDateString()}</Bold>{' '.repeat(2)}
+            {UNTIL_PADDING}<Spinner type="clock" /> Until <Bold>{NEWYEAR.toDateString()}</Bold>{UNTIL_PADDING}
           </div>
         </Box>
       </div>
