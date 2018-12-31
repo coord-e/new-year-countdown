@@ -1,5 +1,6 @@
 import { h, Text, render, Component, Color, Bold } from 'ink';
 import BigText from 'ink-big-text';
+import Spinner from 'ink-spinner';
 import Box from 'ink-box';
 
 import { Happy } from './happy';
@@ -40,7 +41,7 @@ class Countdown extends Component {
           <br />
           <br />
           <div>
-            {' '.repeat(3)}Until <Bold>{NEWYEAR.toDateString()}</Bold>
+            {' '.repeat(2)}<Spinner type="clock" /> Until <Bold>{NEWYEAR.toDateString()}</Bold>{' '.repeat(2)}
           </div>
         </Box>
       </div>

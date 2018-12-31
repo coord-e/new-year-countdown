@@ -27,6 +27,7 @@
     "ink-big-text": "^0.3.0",
     "ink-box": "^0.1.0",
     "ink-progress-bar": "^2.1.1",
+    "ink-spinner": "^2.0.0",
     "ink-text-animation": "^0.1.0"
   }
 }
