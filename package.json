@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/coord-e/happy-new-year-2019/issues"
   },
-  "homepage": "https://github.com/coord-e/happy-new-year-2019#readme"
+  "homepage": "https://github.com/coord-e/happy-new-year-2019#readme",
+  "dependencies": {
+    "ink": "^0.5.1"
+  }
 }
