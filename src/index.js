@@ -1,9 +1,25 @@
-const { h, render, Component, Color, Bold } = require('ink');
+const { h, Text, render, Component, Color, Bold } = require('ink');
 const BigText = require('ink-big-text');
+import TextAnimation from 'ink-text-animation';
 
 const NEWYEAR = new Date(2019, 0, 1, 0, 0, 0, 0);
 const LABEL_SEPARATOR = ' '.repeat(6);
 
+class Happy extends Component {
+  constructor() {
+    super();
+  }
+
+  render() {
+    return (
+      <div>
+        <TextAnimation>
+          <BigText text="HAPPY NEW YEAR" />
+        </TextAnimation>
+      </div>
+    );
+  }
+}
 class Countdown extends Component {
   constructor() {
     super();
@@ -19,6 +35,9 @@ class Countdown extends Component {
     const minute = Math.floor((epoch_diff / 60) % 60);
     const second = Math.floor(epoch_diff % 60);
 
+    if (epoch_diff <= 0) {
+      return <Happy/>
+    }
     return (
       <div>
         <div>
