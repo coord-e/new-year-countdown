@@ -22,6 +22,7 @@
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
     "@babel/plugin-transform-react-jsx": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
     "ink": "^0.5.1",
     "ink-big-text": "^0.3.0",
     "ink-progress-bar": "^2.1.1",

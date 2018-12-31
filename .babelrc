@@ -4,5 +4,12 @@
       "pragma": "h",
       "useBuiltIns": true
     }]
+  ],
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": "10"
+      }
+    }]
   ]
 }
