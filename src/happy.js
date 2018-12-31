@@ -2,6 +2,9 @@ import { h, Component } from 'ink';
 import BigText from 'ink-big-text';
 import TextAnimation from 'ink-text-animation';
 
+const FONTS = ['block', 'simpleBlock', '3d', 'simple3d', 'huge'];
+const font = FONTS[Math.floor(Math.random() * FONTS.length)]
+
 export class Happy extends Component {
   constructor() {
     super();
@@ -11,8 +14,8 @@ export class Happy extends Component {
     return (
       <div>
         <TextAnimation>
-          <BigText text="HAPPY" align="center" />
-          <BigText text="NEW YEAR" align="center" />
+          <BigText text="HAPPY" align="center" font={font} />
+          <BigText text="NEW YEAR" align="center" font={font} />
         </TextAnimation>
       </div>
     );
