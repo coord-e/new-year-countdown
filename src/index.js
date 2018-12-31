@@ -8,7 +8,7 @@ import TextAnimation from 'ink-text-animation';
 
 const NEWYEAR = new Date(2019, 0, 1, 0, 0, 0, 0);
 const LABEL_SEPARATOR = ' '.repeat(14);
-const UNTIL_PADDING = ' '.repeat(12);
+const UNTIL_PADDING = ' '.repeat(20);
 const FONTS = ['block', 'simpleBlock', '3d', 'simple3d', 'huge'];
 const font = FONTS[Math.floor(Math.random() * FONTS.length)]
 
@@ -58,7 +58,7 @@ class Countdown extends Component {
             <BigText font="block" text={`${hour.toString().padStart(2, '0')} ${minute.toString().padStart(2, '0')} ${second.toString().padStart(2, '0')}`}/>
           </Color>
           <div>
-            {' '.repeat(3)}HOURS{LABEL_SEPARATOR}MINUTES{LABEL_SEPARATOR}SECONDS
+            {' '.repeat(6)}HOURS{LABEL_SEPARATOR}MINUTES{LABEL_SEPARATOR}SECONDS
           </div>
           <br />
           <br />
