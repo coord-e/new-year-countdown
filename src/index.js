@@ -1,6 +1,8 @@
-const { h, render, Component, Color } = require('ink');
+const { h, render, Component, Color, Bold } = require('ink');
+const BigText = require('ink-big-text');
 
 const NEWYEAR = new Date(2019, 0, 1, 0, 0, 0, 0);
+const LABEL_SEPARATOR = ' '.repeat(6);
 
 class Countdown extends Component {
   constructor() {
@@ -23,7 +25,15 @@ class Countdown extends Component {
           Current date: <Color green>{this.state.time.toString()}</Color>
         </div>
         <div>
-          <span>{hour} {minute} <Color red>{second}</Color></span>
+          <BigText font="chrome" text={`${hour} ${minute} ${second}`}/>
+        </div>
+        <div>
+          {' '}HOURS{LABEL_SEPARATOR}MINUTES{LABEL_SEPARATOR}SECONDS
+        </div>
+        <br />
+        <br />
+        <div>
+          {' '.repeat(3)}Until <Bold>{NEWYEAR.toDateString()}</Bold>
         </div>
       </div>
     );
