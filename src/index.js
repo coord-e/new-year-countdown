@@ -1,5 +1,5 @@
-const { h, Text, render, Component, Color, Bold } = require('ink');
-const BigText = require('ink-big-text');
+import { h, Text, render, Component, Color, Bold } from 'ink';
+import BigText from 'ink-big-text';
 import TextAnimation from 'ink-text-animation';
 
 const NEWYEAR = new Date(2019, 0, 1, 0, 0, 0, 0);
