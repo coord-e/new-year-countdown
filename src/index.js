@@ -1,25 +1,10 @@
 import { h, Text, render, Component, Color, Bold } from 'ink';
 import BigText from 'ink-big-text';
-import TextAnimation from 'ink-text-animation';
+import { Happy } from './happy';
 
 const NEWYEAR = new Date(2019, 0, 1, 0, 0, 0, 0);
 const LABEL_SEPARATOR = ' '.repeat(5);
 
-class Happy extends Component {
-  constructor() {
-    super();
-  }
-
-  render() {
-    return (
-      <div>
-        <TextAnimation>
-          <BigText text="HAPPY NEW YEAR" />
-        </TextAnimation>
-      </div>
-    );
-  }
-}
 class Countdown extends Component {
   constructor() {
     super();
