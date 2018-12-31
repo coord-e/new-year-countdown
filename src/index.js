@@ -3,7 +3,7 @@ import BigText from 'ink-big-text';
 import TextAnimation from 'ink-text-animation';
 
 const NEWYEAR = new Date(2019, 0, 1, 0, 0, 0, 0);
-const LABEL_SEPARATOR = ' '.repeat(6);
+const LABEL_SEPARATOR = ' '.repeat(5);
 
 class Happy extends Component {
   constructor() {
