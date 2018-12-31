@@ -51,12 +51,12 @@ class Countdown extends Component {
     return (
       <div>
         <div>
-          Current date: <Color green>{this.state.time.toString()}</Color>
+          Current date: <Color blue>{this.state.time.toString()}</Color>
         </div>
         <Box>
-          <div>
+          <Color green>
             <BigText font="block" text={`${hour} ${minute} ${second}`}/>
-          </div>
+          </Color>
           <div>
             {' '.repeat(3)}HOURS{LABEL_SEPARATOR}MINUTES{LABEL_SEPARATOR}SECONDS
           </div>
