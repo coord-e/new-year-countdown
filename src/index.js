@@ -1,14 +1,31 @@
-#!/usr/bin/env babel-node
-
 import { h, Text, render, Component, Color, Bold } from 'ink';
 import BigText from 'ink-big-text';
 import Spinner from 'ink-spinner';
 import Box from 'ink-box';
-
-import { Happy } from './happy';
+import TextAnimation from 'ink-text-animation';
 
 const NEWYEAR = new Date(2019, 0, 1, 0, 0, 0, 0);
 const LABEL_SEPARATOR = ' '.repeat(5);
+const FONTS = ['block', 'simpleBlock', '3d', 'simple3d', 'huge'];
+const font = FONTS[Math.floor(Math.random() * FONTS.length)]
+
+class Happy extends Component {
+  constructor() {
+    super();
+  }
+
+  render() {
+    return (
+      <div>
+        <TextAnimation>
+          <BigText text="HAPPY" align="center" font={font} />
+          <BigText text="NEW YEAR" align="center" font={font} />
+        </TextAnimation>
+        <Bold> 🎉 Have a good holiday! 🎉</Bold>
+      </div>
+    );
+  }
+}
 
 class Countdown extends Component {
   constructor() {
