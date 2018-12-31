@@ -1,5 +1,7 @@
 import { h, Text, render, Component, Color, Bold } from 'ink';
 import BigText from 'ink-big-text';
+import Box from 'ink-box';
+
 import { Happy } from './happy';
 
 const NEWYEAR = new Date(2019, 0, 1, 0, 0, 0, 0);
@@ -28,17 +30,19 @@ class Countdown extends Component {
         <div>
           Current date: <Color green>{this.state.time.toString()}</Color>
         </div>
-        <div>
-          <BigText font="chrome" text={`${hour} ${minute} ${second}`}/>
-        </div>
-        <div>
-          {' '}HOURS{LABEL_SEPARATOR}MINUTES{LABEL_SEPARATOR}SECONDS
-        </div>
-        <br />
-        <br />
-        <div>
-          {' '.repeat(3)}Until <Bold>{NEWYEAR.toDateString()}</Bold>
-        </div>
+        <Box>
+          <div>
+            <BigText font="chrome" text={`${hour} ${minute} ${second}`}/>
+          </div>
+          <div>
+            {' '}HOURS{LABEL_SEPARATOR}MINUTES{LABEL_SEPARATOR}SECONDS
+          </div>
+          <br />
+          <br />
+          <div>
+            {' '.repeat(3)}Until <Bold>{NEWYEAR.toDateString()}</Bold>
+          </div>
+        </Box>
       </div>
     );
   }

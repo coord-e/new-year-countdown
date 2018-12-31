@@ -25,6 +25,7 @@
     "@babel/preset-env": "^7.2.3",
     "ink": "^0.5.1",
     "ink-big-text": "^0.3.0",
+    "ink-box": "^0.1.0",
     "ink-progress-bar": "^2.1.1",
     "ink-text-animation": "^0.1.0"
   }
