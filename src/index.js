@@ -55,7 +55,7 @@ class Countdown extends Component {
         </div>
         <Box>
           <Color green>
-            <BigText font="block" text={`${hour} ${minute} ${second}`}/>
+            <BigText font="block" text={`${hour.toString().padStart(2, '0')} ${minute.toString().padStart(2, '0')} ${second.toString().padStart(2, '0')}`}/>
           </Color>
           <div>
             {' '.repeat(3)}HOURS{LABEL_SEPARATOR}MINUTES{LABEL_SEPARATOR}SECONDS
