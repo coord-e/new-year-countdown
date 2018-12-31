@@ -20,17 +20,19 @@
   },
   "homepage": "https://github.com/coord-e/new-year-countdown#readme",
   "dependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
-    "@babel/node": "^7.2.2",
-    "@babel/plugin-transform-react-jsx": "^7.2.0",
-    "@babel/preset-env": "^7.2.3",
     "ink": "^0.5.1",
     "ink-big-text": "^0.3.0",
     "ink-box": "^0.1.0",
     "ink-progress-bar": "^2.1.1",
     "ink-spinner": "^2.0.0",
     "ink-text-animation": "^0.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-react-jsx": "^7.2.0",
+    "@babel/preset-env": "^7.2.3"
   },
   "bin": {
     "new-year-countdown": "./dist/index.js"
