@@ -1,5 +1,5 @@
 {
-  "name": "happy-new-year-2019",
+  "name": "new-year-countdown",
   "version": "1.0.0",
   "description": "Happy Holidays!",
   "main": "src/index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coord-e/happy-new-year-2019.git"
+    "url": "git+https://github.com/coord-e/new-year-countdown.git"
   },
   "author": "coord.e",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coord-e/happy-new-year-2019/issues"
+    "url": "https://github.com/coord-e/new-year-countdown/issues"
   },
-  "homepage": "https://github.com/coord-e/happy-new-year-2019#readme",
+  "homepage": "https://github.com/coord-e/new-year-countdown#readme",
   "dependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
@@ -31,6 +31,6 @@
     "ink-text-animation": "^0.1.0"
   },
   "bin": {
-    "happy-new-year-2019": "./src/index.js"
+    "new-year-countdown": "./src/index.js"
   }
 }
