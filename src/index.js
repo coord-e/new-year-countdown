@@ -45,6 +45,8 @@ class Countdown extends Component {
     const minute = Math.floor((epoch_diff / 60) % 60);
     const second = Math.floor(epoch_diff % 60);
 
+    const is_green = minute != 0 || hour != 0;
+
     if (epoch_diff <= 0) {
       return <Happy/>
     }
@@ -54,7 +56,7 @@ class Countdown extends Component {
           Current date: <Color blue>{this.state.time.toString()}</Color>
         </div>
         <Box>
-          <Color green={minute!=0} red={minute==0}>
+          <Color green={is_green} red={!is_green}>
             <BigText font="block" text={`${hour.toString().padStart(2, '0')} ${minute.toString().padStart(2, '0')} ${second.toString().padStart(2, '0')}`}/>
           </Color>
           <div>
