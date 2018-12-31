@@ -1,6 +1,6 @@
 {
   "name": "new-year-countdown",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Happy Holidays!",
   "main": "src/index.js",
   "scripts": {
