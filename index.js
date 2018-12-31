@@ -12,7 +12,7 @@ class Countdown extends Component {
   render() {
     return (
       <Color green>
-        {this.time}
+        {this.state.time.toString()}
       </Color>
     );
   }
