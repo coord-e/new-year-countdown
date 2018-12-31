@@ -54,7 +54,7 @@ class Countdown extends Component {
           Current date: <Color blue>{this.state.time.toString()}</Color>
         </div>
         <Box>
-          <Color green>
+          <Color green={minute!=0} red={minute==0}>
             <BigText font="block" text={`${hour.toString().padStart(2, '0')} ${minute.toString().padStart(2, '0')} ${second.toString().padStart(2, '0')}`}/>
           </Color>
           <div>
